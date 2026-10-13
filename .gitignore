@@ -1,0 +1,10 @@
+# Build output
+build/
+out/
+.vs/
+CMakeUserPresets.json
+*.user
+*.log
+
+# Test streams are large; regenerate them with the ffmpeg commands in README.md
+testdata/

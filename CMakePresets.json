@@ -1,0 +1,24 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 25, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "x64",
+      "displayName": "x64 (CLI + both DLLs)",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build/x64"
+    },
+    {
+      "name": "x86",
+      "displayName": "x86 (DirectShow filter for 32-bit consumers)",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "Win32",
+      "binaryDir": "${sourceDir}/build/x86"
+    }
+  ],
+  "buildPresets": [
+    { "name": "x64", "configurePreset": "x64", "configuration": "Release" },
+    { "name": "x86", "configurePreset": "x86", "configuration": "Release" }
+  ]
+}
