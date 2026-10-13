@@ -6,11 +6,11 @@
 
 <p align="center">The Windows receiver for camerafy-ios. It turns an iPhone into a webcam over the USB cable.</p>
 
-<p align="center">The iPhone app lives in <a href="https://github.com/camerafy/camerafy-ios">camerafy-ios</a>.</p>
+<p align="center">The iPhone app lives in <a href="https://github.com/EpicCodeWizard/camerafy-ios">camerafy-ios</a>.</p>
 
 ## What it does
 
-Plug in an iPhone running [camerafy-ios](https://github.com/camerafy/camerafy-ios) (the app is called Camerafy on the phone) and two webcams show up in Windows. Video travels over the USB cable only, so the receiver works with every network adapter turned off. You need Apple's Apple Devices app installed, because Windows reaches the phone through it.
+Plug in an iPhone running [camerafy-ios](https://github.com/EpicCodeWizard/camerafy-ios) (the app is called Camerafy on the phone) and two webcams show up in Windows. Video travels over the USB cable only, so the receiver works with every network adapter turned off. You need Apple's Apple Devices app installed, because Windows reaches the phone through it.
 
 | Camera | Backend | Seen by |
 |---|---|---|
@@ -26,7 +26,7 @@ The receiver decodes the H.264 stream on the GPU with NVDEC and hands each frame
 - Windows 11, build 22000 or later. The Media Foundation virtual camera API starts there.
 - An NVIDIA GPU with H.264 NVDEC and [driver 570 or later](https://www.nvidia.com/en-us/drivers/). The driver ships the CUDA and NVDEC DLLs the receiver uses for decoding.
 - The [Apple Devices app](https://apps.microsoft.com/detail/9np83lwlpz9k) from the Microsoft Store, or [iTunes](https://www.apple.com/itunes/). This is required: its Apple Mobile Device Service is the only way to reach the phone over USB.
-- The [camerafy-ios](https://github.com/camerafy/camerafy-ios) app open on the iPhone. It sends the video.
+- The [camerafy-ios](https://github.com/EpicCodeWizard/camerafy-ios) app open on the iPhone. It sends the video.
 
 The receiver downloads nothing at runtime and needs no firewall rule.
 
